@@ -34,17 +34,35 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-cream text-brown">
-    <!-- Navigation -->
-    <nav class="absolute top-0 left-0 w-full z-50 py-4 bg-transparent">
+ <!-- Navigation -->
+<nav class="absolute top-0 left-0 w-full z-50 py-4 bg-transparent">
   <div class="container mx-auto px-6 flex justify-between items-center">
     <div class="text-2xl font-bold text-cream">Leafory</div>
     <div class="hidden md:flex space-x-8">
-      <a href="#home" class="text-cream hover:text-sage transition-colors">Beranda</a>
-      <a href="#about" class="text-cream hover:text-sage transition-colors">Tentang</a>
-      <a href="#featured" class="text-cream hover:text-sage transition-colors">Unggulan</a>
-      <a href="#services" class="text-cream hover:text-sage transition-colors">Layanan</a>
-      <a href="#products" class="text-cream hover:text-sage transition-colors">Produk</a>
-      <a href="#contact" class="text-cream hover:text-sage transition-colors">Kontak</a>
+      <a href="#home" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Beranda</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#about" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Tentang</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#featured" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Unggulan</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#services" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Layanan</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#products" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Produk</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="#contact" class="text-cream hover:text-white relative group">
+        🌿<span class="ml-1">Kontak</span>
+        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+      </a>
     </div>
     <button class="md:hidden text-cream" onclick="toggleMenu()">
       <i class="fas fa-bars text-xl"></i>
@@ -54,43 +72,44 @@
   <!-- Mobile Menu -->
   <div id="mobileMenu" class="hidden md:hidden bg-black/60 backdrop-blur-sm border-t border-white/10">
     <div class="container mx-auto px-6 py-4 space-y-2">
-      <a href="#home" class="block text-cream hover:text-sage transition-colors">Beranda</a>
-      <a href="#about" class="block text-cream hover:text-sage transition-colors">Tentang</a>
-      <a href="#featured" class="block text-cream hover:text-sage transition-colors">Unggulan</a>
-      <a href="#services" class="block text-cream hover:text-sage transition-colors">Layanan</a>
-      <a href="#products" class="block text-cream hover:text-sage transition-colors">Produk</a>
-      <a href="#contact" class="block text-cream hover:text-sage transition-colors">Kontak</a>
+      <a href="#home" class="block text-cream hover:text-sage transition-colors">🌿 Beranda</a>
+      <a href="#about" class="block text-cream hover:text-sage transition-colors">🌿 Tentang</a>
+      <a href="#featured" class="block text-cream hover:text-sage transition-colors">🌿 Unggulan</a>
+      <a href="#services" class="block text-cream hover:text-sage transition-colors">🌿 Layanan</a>
+      <a href="#products" class="block text-cream hover:text-sage transition-colors">🌿 Produk</a>
+      <a href="#contact" class="block text-cream hover:text-sage transition-colors">🌿 Kontak</a>
     </div>
   </div>
 </nav>
 
+<!-- Hero Section -->
+<section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('assets/bg-philoplant.jpeg');">
+  <div class="absolute inset-0 bg-black/40"></div> <!-- overlay ditingkatkan -->
+  
+  <div class="relative z-10 text-center px-6 max-w-3xl">
+    <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
+        style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.1em;">
+      Leafory
+    </h1>
 
+    <p class="text-cream text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
+      Leafory adalah pilihan ideal untuk menghadirkan ketenangan dan keindahan tanaman tropis ke dalam rumah Anda. 
+      Temukan berbagai varietas tanaman hias dengan tampilan estetis dan perawatan yang mudah.
+    </p>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('assets/bg-philoplant.jpeg');">
-    <div class="absolute inset-0 bg-black/30"></div> <!-- Overlay gelap agar teks lebih terbaca -->
-
-    <div class="relative z-10 text-center px-6 max-w-3xl">
-        <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
-            style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.1em;">
-        Leafory
-        </h1>
-
-
-        <p class="text-cream text-lg md:text-xl mb-8 leading-relaxed drop-shadow">
-            Leafory adalah pilihan ideal untuk menghadirkan ketenangan dan keindahan tanaman tropis ke dalam rumah Anda. 
-            Temukan berbagai varietas tanaman hias dengan tampilan estetis dan perawatan yang mudah.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors">
-                Jelajahi Koleksi
-            </button>
-            <button class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-green-800 transition-colors">
-                Pelajari Lebih Lanjut
-            </button>
-        </div>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <!-- CTA 1 (Primary) -->
+      <button class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors">
+        Jelajahi Koleksi
+      </button>
+      <!-- CTA 2 (Secondary) -->
+      <button class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-green-800 transition-colors">
+        Pelajari Lebih Lanjut
+      </button>
     </div>
+  </div>
 </section>
+
 
 
     <!-- Section 1: Deskripsi Usaha -->
