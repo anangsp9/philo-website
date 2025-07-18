@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leafory - Tanaman Berkualitas untuk Rumah Anda</title>
     <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Playfair Display', serif;
-    }
-    html, body {
-  overflow-x: hidden;
-}
-  </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+    </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         'sage': '#809671',
-                        'cream': '#E5E0D8', 
+                        'cream': '#E5E0D8',
                         'olive': '#B3B792',
                         'sand': '#D2AB80',
                         'brown': '#725C3A',
@@ -34,144 +39,184 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-cream text-brown">
- <!-- Navigation -->
-<nav class="absolute top-0 left-0 w-full z-50 py-4 bg-transparent">
-  <div class="w-full px-4 md:px-6 flex justify-between items-center">
-    <!-- Logo kiri -->
-    <div class="text-2xl font-bold text-cream ml-0">Leafory</div>
+    <!-- Navigation -->
+    <nav class="absolute top-0 left-0 w-full z-50 py-4 bg-transparent">
+        <div class="w-full px-4 md:px-6 flex justify-between items-center">
+            <!-- Logo kiri -->
+            <div class="text-2xl font-bold text-cream ml-0">Leafory</div>
 
-    <!-- Menu Desktop (disembunyikan di mobile) -->
-    <div class="hidden lg:flex space-x-8">
-      <a href="#home" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Beranda</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#about" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Tentang</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#featured" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Unggulan</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#services" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Layanan</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#products" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Produk</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-      <a href="#contact" class="text-cream hover:text-white relative group">
-        🌿<span class="ml-1">Kontak</span>
-        <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-      </a>
-    </div>
+            <!-- Menu Desktop (disembunyikan di mobile) -->
+            <div class="hidden lg:flex space-x-8">
+                <a href="#home" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Beranda</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Tentang</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#featured" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Unggulan</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#services" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Layanan</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#products" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Produk</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Kontak</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
 
-    <!-- Tombol Menu Mobile kanan -->
-    <button class="lg:hidden text-cream mr-0" onclick="toggleMenu()">
-      <i class="fas fa-bars text-xl"></i>
-    </button>
-  </div>
+            <!-- Tombol Menu Mobile kanan -->
+            <button class="lg:hidden text-cream mr-0" onclick="toggleMenu()">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
 
-  <!-- Menu Mobile -->
-  <div id="mobileMenu" class="hidden lg:hidden bg-black/60 backdrop-blur-sm border-t border-white/10">
-    <div class="w-full px-4 py-4 space-y-2">
-      <a href="#home" class="block text-cream hover:text-sage transition-colors">🌿 Beranda</a>
-      <a href="#about" class="block text-cream hover:text-sage transition-colors">🌿 Tentang</a>
-      <a href="#featured" class="block text-cream hover:text-sage transition-colors">🌿 Unggulan</a>
-      <a href="#services" class="block text-cream hover:text-sage transition-colors">🌿 Layanan</a>
-      <a href="#products" class="block text-cream hover:text-sage transition-colors">🌿 Produk</a>
-      <a href="#contact" class="block text-cream hover:text-sage transition-colors">🌿 Kontak</a>
-    </div>
-  </div>
-</nav>
-
-
-<!-- Hero Section -->
-<section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('assets/cropted-bg-philoplant.jpg');">
-  <div class="absolute inset-0 bg-black/40"></div> <!-- overlay ditingkatkan -->
-  
-  <div class="relative z-10 text-center px-6 max-w-3xl">
-    <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
-        style="font-family: 'Merriweather', serif; font-weight: 900; font-style: italic; letter-spacing: 0.1em;">
-      Leafory
-    </h1>
-
-    <p class="text-cream text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
-      Leafory adalah brand tanaman hias yang menghidupkan ruang Anda dengan keindahan alam. Berfokus pada koleksi Philodendron dan tanaman pilihan lainnya, kami mengusung konsep alami, elegan, dan mudah dirawat menghubungkan ketenangan hijau dengan gaya hidup modern yang berkelanjutan.
-    </p>
-
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <!-- CTA 1 (Primary) -->
-      <button class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors">
-        Jelajahi Koleksi
-      </button>
-      <!-- CTA 2 (Secondary) -->
-      <button class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-green-800 transition-colors">
-        Pelajari Lebih Lanjut
-      </button>
-    </div>
-  </div>
-</section>
+        <!-- Menu Mobile -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-black/60 backdrop-blur-sm border-t border-white/10">
+            <div class="w-full px-4 py-4 space-y-2">
+                <a href="#home" class="block text-cream hover:text-sage transition-colors">🌿 Beranda</a>
+                <a href="#about" class="block text-cream hover:text-sage transition-colors">🌿 Tentang</a>
+                <a href="#featured" class="block text-cream hover:text-sage transition-colors">🌿 Unggulan</a>
+                <a href="#services" class="block text-cream hover:text-sage transition-colors">🌿 Layanan</a>
+                <a href="#products" class="block text-cream hover:text-sage transition-colors">🌿 Produk</a>
+                <a href="#contact" class="block text-cream hover:text-sage transition-colors">🌿 Kontak</a>
+            </div>
+        </div>
+    </nav>
 
 
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center relative"
+        style="background-image: url('assets/cropted-bg-philoplant.jpg');">
+        <div class="absolute inset-0 bg-black/40"></div> <!-- overlay ditingkatkan -->
+
+        <div class="relative z-10 text-center px-6 max-w-3xl animate-on-scroll">
+            <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
+                style="font-family: 'Merriweather', serif; font-weight: 900; font-style: italic; letter-spacing: 0.1em;">
+                Leafory
+            </h1>
+
+            <p class="text-cream text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
+                Leafory adalah brand tanaman hias yang menghidupkan ruang Anda dengan keindahan alam. Berfokus pada
+                koleksi Philodendron dan tanaman pilihan lainnya, kami mengusung konsep alami, elegan, dan mudah dirawat
+                menghubungkan ketenangan hijau dengan gaya hidup modern yang berkelanjutan.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <!-- CTA 1 (Primary) -->
+                <button
+                    class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors">
+                    Jelajahi Koleksi
+                </button>
+                <!-- CTA 2 (Secondary) -->
+                <button
+                    class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-green-800 transition-colors">
+                    Pelajari Lebih Lanjut
+                </button>
+            </div>
+        </div>
+    </section>
 
     <!-- Section 1: Deskripsi Usaha -->
-    <section id="about" class="pt-20 pb-1 bg-white">
-  <div class="container mx-auto px-6 text-center">
-    
-    <!-- Bagian Atas (Optional Intro Text) -->
-    <p class="text-brown/70 text-lg max-w-3xl mx-auto mb-8">
-      Nikmati pilihan produk terbaik kami yang diproses dari daun alami berkualitas tinggi.
-Setiap produk dirancang dengan perhatian terhadap kesegaran, kemurnian, dan keberlanjutan.
-Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkungan.
-    </p>
+    <section id="about" class="pt-24 pb-16 bg-white relative overflow-hidden">
 
-    <!-- Tiga Kolom -->
-    <div class="flex justify-center">
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start text-left w-fit mx-auto">
-    
-    <!-- Kolom 1 -->
-    <div class="flex items-center gap-6">
-      <div class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
-        <img src="assets/Daco_4359678.png" alt="Leaf Sample" class="w-48 h-48 object-cover opacity-80" />
-      </div>
-      <div>
-        <p class="text-3xl font-bold text-brown mb-2">140k</p>
-        <p class="text-sm text-brown/70 leading-relaxed">
-          Infused Leaf Base<br>
-          High-quality source from nature<br>
-          Selected manually
-        </p>
-      </div>
+        <!-- Dekorasi Kiri -->
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Kiri"
+            class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-64 opacity-100 z-0">
+
+        <!-- Dekorasi Kanan -->
+        <img src="assets/philo-pink-mereng.png" alt="Dekor Kanan"
+            class="hidden md:block absolute right-0 top-1/4 -translate-y-1/2 opacity-100 z-0 -scale-x-100"
+            style="width: 300px;">
+
+        <!-- Dekorasi Mobile (Kiri & Kanan) -->
+        <img src="assets/philo-pink-mereng.png" alt="Dekor Kanan Mobile"
+            class="block md:hidden absolute right-0 top-0 w-32 opacity-99 z-0 -scale-x-100">
+
+
+        <!-- Konten Utama -->
+        <div class="container mx-auto px-6 text-center relative z-10">
+
+            <!-- Judul Atas -->
+            <h2 class="text-4xl font-serif text-brown mb-6 animate-on-scroll">Produk Unggulan</h2>
+
+            <!-- Bagian Atas (Optional Intro Text) -->
+            <p class="text-brown/70 text-lg max-w-3xl mx-auto mb-12">
+                Nikmati pilihan produk terbaik kami yang diproses dari daun alami berkualitas tinggi.
+                Setiap produk dirancang dengan perhatian terhadap kesegaran, kemurnian, dan keberlanjutan.
+                Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkungan.
+            </p>
+
+            <!-- Dua Kolom -->
+            <div class="flex justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start text-left w-fit mx-auto">
+
+                    <!-- Kolom 1 -->
+                    <div class="flex items-center gap-6">
+                        <div
+                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
+                            <img src="assets/Daco_4359678.png" alt="Leaf Sample"
+                                class="w-48 h-48 object-cover opacity-80" />
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-brown mb-2">140k</p>
+                            <p class="text-sm text-brown/70 leading-relaxed">
+                                Infused Leaf Base<br>
+                                High-quality source from nature<br>
+                                Selected manually
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 2 -->
+                    <div class="flex items-center gap-6">
+                        <div
+                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
+                            <img src="assets/Daco_4359678.png" alt="Herbal Sample" class="w-48 h-48 object-cover" />
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-brown mb-2">90k</p>
+                            <p class="text-sm text-brown/70 leading-relaxed">
+                                100% Fresh Leaves<br>
+                                Organic and Certified<br>
+                                Ready for consumption
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Mobile"
+            class="absolute left-0 top-0 translate-y-[-50%] w-36 opacity-99 z-0 pointer-events-none">
     </div>
 
-    <!-- Kolom 2 -->
-    <div class="flex items-center gap-6">
-      <div class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
-        <img src="assets/Daco_4359678.png" alt="Herbal Sample" class="w-48 h-48 object-cover" />
-      </div>
-      <div>
-        <p class="text-3xl font-bold text-brown mb-2">90k</p>
-        <p class="text-sm text-brown/70 leading-relaxed">
-          100% Fresh Leaves<br>
-          Organic and Certified<br>
-          Ready for consumption
-        </p>
-      </div>
+    <!-- Dekorasi Desktop Tengah (Kanan) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/philo-ijo-rek.png" alt="Dekor Tengah Kanan"
+            class="absolute right-0 top-0 translate-y-[-20%] w-72 opacity-99 z-0 -scale-x-100 pointer-events-none">
     </div>
-
-  </div>
-</div>
-
-
-    <!-- Judul Bawah -->
-    <h2 class="text-4xl font-serif mt-20 text-brown">Produk Unggulan</h2>
-    
-  </div>
-</section>
 
 
     <!-- Section 2: Services -->
@@ -234,8 +279,22 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
         </div>
     </section>
 
+    <!-- Dekorasi Desktop Tengah (Kiri) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Kiri"
+            class="absolute left-0 top-0 translate-y-[-62%] opacity-99 z-0 pointer-events-none" style="width: 360px;">
+    </div>
+
     <!-- Section 3: Products -->
     <section id="products" class="py-20 bg-gradient-to-br from-beige/30 to-cream/50">
+
+        <!-- Dekorasi Desktop Tengah (Kanan) -->
+        <div class="relative h-0 hidden md:block">
+            <img src="assets/philo-7-ijok.png" alt="Dekor Tengah Kanan"
+                class="absolute right-0 top-0 translate-y-[10%] opacity-99 z-0 -scale-x-100 pointer-events-none"
+                style="width: 200px;">
+        </div>
+
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-brown mb-6">Koleksi Produk</h2>
@@ -252,11 +311,13 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Snake Plant</h3>
                         <p class="text-brown/70 text-sm mb-4">
-                            Tanaman pembersih udara yang sangat mudah perawatan. Cocok untuk pemula dan ruang dengan cahaya minim.
+                            Tanaman pembersih udara yang sangat mudah perawatan. Cocok untuk pemula dan ruang dengan
+                            cahaya minim.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-lg font-bold text-sage">Rp 85.000</span>
-                            <button class="bg-sage text-white px-4 py-2 rounded-full text-sm hover:bg-sage/90 transition-colors">
+                            <button
+                                class="bg-sage text-white px-4 py-2 rounded-full text-sm hover:bg-sage/90 transition-colors">
                                 Beli
                             </button>
                         </div>
@@ -270,11 +331,13 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Peace Lily</h3>
                         <p class="text-brown/70 text-sm mb-4">
-                            Tanaman berbunga putih yang elegan. Memberikan kesan tenang dan damai untuk ruang kerja atau kamar tidur.
+                            Tanaman berbunga putih yang elegan. Memberikan kesan tenang dan damai untuk ruang kerja atau
+                            kamar tidur.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-lg font-bold text-olive">Rp 120.000</span>
-                            <button class="bg-olive text-white px-4 py-2 rounded-full text-sm hover:bg-olive/90 transition-colors">
+                            <button
+                                class="bg-olive text-white px-4 py-2 rounded-full text-sm hover:bg-olive/90 transition-colors">
                                 Beli
                             </button>
                         </div>
@@ -288,11 +351,13 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Rubber Plant</h3>
                         <p class="text-brown/70 text-sm mb-4">
-                            Tanaman dengan daun mengkilap yang memberikan kesan modern. Tumbuh cepat dan mudah beradaptasi.
+                            Tanaman dengan daun mengkilap yang memberikan kesan modern. Tumbuh cepat dan mudah
+                            beradaptasi.
                         </p>
                         <div class="flex justify-between items-center">
                             <span class="text-lg font-bold text-sand">Rp 95.000</span>
-                            <button class="bg-sand text-white px-4 py-2 rounded-full text-sm hover:bg-sand/90 transition-colors">
+                            <button
+                                class="bg-sand text-white px-4 py-2 rounded-full text-sm hover:bg-sand/90 transition-colors">
                                 Beli
                             </button>
                         </div>
@@ -308,6 +373,12 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
         </div>
     </section>
 
+    <!-- Dekorasi Desktop Tengah (Kiri) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Kiri"
+            class="absolute left-0 top-0 translate-y-[-62%] opacity-99 z-0 pointer-events-none" style="width: 320px;">
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-brown text-white">
         <div class="container mx-auto px-6">
@@ -315,7 +386,7 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                 <div>
                     <h2 class="text-4xl font-bold mb-6">Hubungi Kami</h2>
                     <p class="text-white/80 mb-8 leading-relaxed">
-                        Siap membantu Anda menemukan tanaman pilo yang sempurna. 
+                        Siap membantu Anda menemukan tanaman pilo yang sempurna.
                         Hubungi tim ahli kami untuk konsultasi gratis.
                     </p>
                     <div class="space-y-4">
@@ -335,10 +406,14 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                 </div>
                 <div class="bg-white/10 p-8 rounded-2xl">
                     <form class="space-y-4">
-                        <input type="text" placeholder="Nama Lengkap" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
-                        <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
-                        <textarea placeholder="Pesan Anda" rows="4" class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70"></textarea>
-                        <button type="submit" class="w-full bg-sage text-white py-3 rounded-lg hover:bg-sage/90 transition-colors">
+                        <input type="text" placeholder="Nama Lengkap"
+                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
+                        <input type="email" placeholder="Email"
+                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
+                        <textarea placeholder="Pesan Anda" rows="4"
+                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70"></textarea>
+                        <button type="submit"
+                            class="w-full bg-sage text-white py-3 rounded-lg hover:bg-sage/90 transition-colors">
                             Kirim Pesan
                         </button>
                     </form>
@@ -378,13 +453,16 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
                 <div>
                     <h4 class="font-semibold mb-4">Ikuti Kami</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </div>
@@ -420,7 +498,7 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
         });
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
                 nav.classList.add('shadow-lg');
@@ -435,7 +513,7 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
+        const observer = new IntersectionObserver(function (entries) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '1';
@@ -445,20 +523,31 @@ Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkun
         }, observerOptions);
 
         // Observe all sections
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(30px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
 
         // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
+        document.querySelector('form').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('Terima kasih! Pesan Anda telah dikirim. Tim kami akan segera menghubungi Anda.');
-            this.reset();
+
+            const nama = this.querySelector('input[type="text"]').value.trim();
+            const email = this.querySelector('input[type="email"]').value.trim();
+            const pesan = this.querySelector('textarea').value.trim();
+
+            const nomorWhatsApp = '6282241416360'; // Tanpa +
+            const urlPesan = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(
+                `Halo! Saya ingin berkonsultasi mengenai tanaman pilo.%0A%0A*Nama:* ${nama}%0A*Email:* ${email}%0A*Pesan:* ${pesan}`
+            )}`;
+
+            window.open(urlPesan, '_blank'); // buka tab baru ke WhatsApp
         });
+
     </script>
 </body>
 </body>
+
 </html>
