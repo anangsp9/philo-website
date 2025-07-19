@@ -20,6 +20,63 @@
         body {
             overflow-x: hidden;
         }
+
+        .show-menu {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            display: block !important;
+        }
+
+        .bubble-link {
+            @apply bg-white/10 text-cream px-6 py-3 rounded-full shadow-md hover:bg-sage/80 hover:text-white transition-all duration-300 ease-out text-center w-full max-w-xs text-sm backdrop-blur-md;
+            transform: scale(0.95);
+            opacity: 0;
+            animation: bubbleIn 0.4s forwards;
+        }
+
+        @keyframes bubbleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Delay utilities (since Tailwind doesn't allow animation-delay via class) */
+        .delay-75 {
+            animation-delay: 75ms;
+        }
+
+        .delay-100 {
+            animation-delay: 100ms;
+        }
+
+        .delay-150 {
+            animation-delay: 150ms;
+        }
+
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .delay-300 {
+            animation-delay: 300ms;
+        }
+
+        .delay-400 {
+            animation-delay: 400ms;
+        }
+
+        /* Optional: bubble menu slide in */
+        .show-menu {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            display: block !important;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -88,16 +145,19 @@
         </div>
 
         <!-- Menu Mobile -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-black/60 backdrop-blur-sm border-t border-white/10">
-            <div class="w-full px-4 py-4 space-y-2">
-                <a href="#home" class="block text-cream hover:text-sage transition-colors">🌿 Beranda</a>
-                <a href="#about" class="block text-cream hover:text-sage transition-colors">🌿 Tentang</a>
-                <a href="#featured" class="block text-cream hover:text-sage transition-colors">🌿 Unggulan</a>
-                <a href="#services" class="block text-cream hover:text-sage transition-colors">🌿 Layanan</a>
-                <a href="#products" class="block text-cream hover:text-sage transition-colors">🌿 Produk</a>
-                <a href="#contact" class="block text-cream hover:text-sage transition-colors">🌿 Kontak</a>
+        <div id="mobileMenu"
+            class="hidden lg:hidden bg-black/60 backdrop-blur-sm border-t border-white/10 transition-all duration-500 ease-in-out transform translate-y-[-10px] opacity-0">
+            <div class="w-full px-4 py-6 flex flex-col items-center gap-3 text-white">
+                <a href="#home" class="bubble-link delay-75">🌿 Beranda</a>
+                <a href="#about" class="bubble-link delay-100">🌿 Tentang</a>
+                <a href="#featured" class="bubble-link delay-150">🌿 Unggulan</a>
+                <a href="#services" class="bubble-link delay-200">🌿 Layanan</a>
+                <a href="#products" class="bubble-link delay-300">🌿 Produk</a>
+                <a href="#contact" class="bubble-link delay-400">🌿 Kontak</a>
             </div>
         </div>
+
+
     </nav>
 
 
@@ -108,7 +168,7 @@
 
         <div class="relative z-10 text-center px-6 max-w-3xl animate-on-scroll">
             <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
-                style="font-family: 'Merriweather', serif; font-weight: 900; font-style: italic; letter-spacing: 0.1em;">
+                style="font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 0.05em;">
                 Leafory
             </h1>
 
@@ -131,6 +191,15 @@
                 </button>
             </div>
         </div>
+        <!-- Gradasi bawah -->
+        <div class="absolute left-0 bottom-0 w-full h-10 z-20 pointer-events-none" style="background: linear-gradient(
+         to bottom, 
+         rgba(255,255,255,0) 0%, 
+         rgba(255,255,255,0.1) 35%,
+         rgba(255,255,255,0.25) 60%,
+         rgba(255,255,255,0.7) 85%,
+         #fff 100%
+     );"></div>
     </section>
 
     <!-- Section 1: Deskripsi Usaha -->
@@ -138,16 +207,16 @@
 
         <!-- Dekorasi Kiri -->
         <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Kiri"
-            class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-64 opacity-100 z-0">
+            class="hidden xl:block absolute left-0 top-1/2 -translate-y-1/2 w-64 opacity-100 z-0">
 
         <!-- Dekorasi Kanan -->
         <img src="assets/philo-pink-mereng.png" alt="Dekor Kanan"
-            class="hidden md:block absolute right-0 top-1/4 -translate-y-1/2 opacity-100 z-0 -scale-x-100"
+            class="hidden lg:block absolute right-0 top-1/4 -translate-y-1/2 opacity-100 z-0 -scale-x-100"
             style="width: 300px;">
 
-        <!-- Dekorasi Mobile (Kiri & Kanan) -->
-        <img src="assets/philo-pink-mereng.png" alt="Dekor Kanan Mobile"
-            class="block md:hidden absolute right-0 top-0 w-32 opacity-99 z-0 -scale-x-100">
+        <!-- Dekorasi Mobile (Kanan) -->
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Kanan Mobile"
+            class="block lg:hidden absolute right-0 top-0 w-32 opacity-99 z-0 -scale-x-100">
 
 
         <!-- Konten Utama -->
@@ -207,7 +276,7 @@
     </section>
 
     <!-- Dekorasi Mobile Tengah (Kiri) -->
-    <div class="relative h-0 block md:hidden">
+    <div class="relative h-0 block xl:hidden">
         <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Mobile"
             class="absolute left-0 top-0 translate-y-[-50%] w-36 opacity-99 z-0 pointer-events-none">
     </div>
@@ -218,6 +287,12 @@
             class="absolute right-0 top-0 translate-y-[-20%] w-72 opacity-99 z-0 -scale-x-100 pointer-events-none">
     </div>
 
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-mereng.png" alt="Dekor Tengah Kanan Mobile"
+            class="absolute right-0 top-0 translate-y-[10%] opacity-99 z-0 pointer-events-none -scale-x-100"
+            style="width: 150px;">
+    </div>
 
     <!-- Section 2: Services -->
     <section id="services" class="py-20 bg-white">
@@ -283,6 +358,19 @@
     <div class="relative h-0 hidden md:block">
         <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Kiri"
             class="absolute left-0 top-0 translate-y-[-62%] opacity-99 z-0 pointer-events-none" style="width: 360px;">
+    </div>
+
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-ijo-rek.png" alt="Dekor Tengah Mobile"
+            class="absolute left-0 top-0 translate-y-[-60%] opacity-99 z-0 pointer-events-none" style="width: 180px;">
+    </div>
+
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Kanan Mobile"
+            class="absolute right-0 top-0 translate-y-[10%] opacity-99 z-0 pointer-events-none -scale-x-100"
+            style="width: 120px;">
     </div>
 
     <!-- Section 3: Products -->
@@ -379,6 +467,19 @@
             class="absolute left-0 top-0 translate-y-[-62%] opacity-99 z-0 pointer-events-none" style="width: 320px;">
     </div>
 
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-7-ijok.png" alt="Dekor Tengah Mobile"
+            class="absolute left-0 top-0 translate-y-[-60%] opacity-99 z-0 pointer-events-none" style="width: 110px;">
+    </div>
+
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Kanan Mobile"
+            class="absolute right-0 top-0 translate-y-[10%] opacity-99 z-0 pointer-events-none -scale-x-100"
+            style="width: 150px;">
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-brown text-white">
         <div class="container mx-auto px-6">
@@ -408,8 +509,6 @@
                     <form class="space-y-4">
                         <input type="text" placeholder="Nama Lengkap"
                             class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
-                        <input type="email" placeholder="Email"
-                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
                         <textarea placeholder="Pesan Anda" rows="4"
                             class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70"></textarea>
                         <button type="submit"
@@ -421,6 +520,12 @@
             </div>
         </div>
     </section>
+
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Mobile"
+            class="absolute left-0 top-0 translate-y-[-55%] w-36 opacity-99 z-0 pointer-events-none">
+    </div>
 
     <!-- Footer -->
     <footer class="bg-brown/90 text-white py-12">
@@ -472,14 +577,31 @@
                 <p>&copy; 2025 Leafory. Semua hak dilindungi.</p>
             </div>
         </div>
+        <!-- Dekorasi Mobile Tengah (Kanan) -->
+        <!-- <div class="relative h-0 block md:hidden">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Kanan Mobile"
+            class="absolute right-0 top-0 translate-y-[-170%] opacity-99 z-0 pointer-events-none -scale-x-100"
+            style="width: 220px;">
+    </div> -->
     </footer>
 
     <script>
         // Mobile menu toggle
         function toggleMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('show-menu')) {
+                mobileMenu.classList.remove('show-menu');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+            } else {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.add('show-menu');
+                }, 10); // biar transisi kebaca
+            }
         }
+
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -535,16 +657,16 @@
             e.preventDefault();
 
             const nama = this.querySelector('input[type="text"]').value.trim();
-            const email = this.querySelector('input[type="email"]').value.trim();
             const pesan = this.querySelector('textarea').value.trim();
 
             const nomorWhatsApp = '6282241416360'; // Tanpa +
             const urlPesan = `https://wa.me/${nomorWhatsApp}?text=${encodeURIComponent(
-                `Halo! Saya ingin berkonsultasi mengenai tanaman pilo. Nama: ${nama} Email: ${email} Pesan: ${pesan}`
+                `Halo! Saya ingin berkonsultasi mengenai tanaman pilo. Nama: ${nama} Pesan: ${pesan}`
             )}`;
 
-            window.open(urlPesan, '_blank'); // buka tab baru ke WhatsApp
+            window.open(urlPesan, '_blank');
         });
+
 
     </script>
 </body>
