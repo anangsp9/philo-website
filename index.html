@@ -95,6 +95,7 @@
         }
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-cream text-brown">
@@ -153,7 +154,7 @@
                 <a href="#services" class="bubble-link delay-200">🌿 Layanan</a>
                 <a href="#products" class="bubble-link delay-300">🌿 Produk</a>
                 <a href="#contact" class="bubble-link delay-400">🌿 Kontak</a>
-                <a href="#footer" class="bubble-link delay-100">🌿 Tentang</a>
+                <a href="#footer" class="bubble-link delay-400">🌿 Tentang</a>
             </div>
         </div>
 
@@ -168,17 +169,17 @@
 
         <div class="relative z-10 text-center px-6 max-w-3xl animate-on-scroll">
             <h1 class="text-cream text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg"
-                style="font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 0.05em;">
+                style="font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 0.05em;" data-aos="zoom-in" data-aos-delay="150" data-aos-duration="1000">
                 Leafory
             </h1>
 
-            <p class="text-cream text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md">
+            <p class="text-cream text-lg md:text-xl mb-6 leading-relaxed drop-shadow-md" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
                 Leafory adalah brand tanaman hias yang menghidupkan ruang Anda dengan keindahan alam. Berfokus pada
                 koleksi Philodendron dan tanaman pilihan lainnya, kami mengusung konsep alami, elegan, dan mudah dirawat
                 menghubungkan ketenangan hijau dengan gaya hidup modern yang berkelanjutan.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center" data-aos="flip-left" data-aos-delay="250" data-aos-duration="1500">
                 <!-- CTA 1 (Primary) -->
                 <a href="#products"
                     class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors text-center">
@@ -224,10 +225,10 @@
         <div class="container mx-auto px-6 text-center relative z-10">
 
             <!-- Judul Atas -->
-            <h2 class="text-4xl font-serif text-brown mb-6 animate-on-scroll">Produk Unggulan</h2>
+            <h2 class="text-4xl font-serif text-brown mb-6" data-aos="fade-up" data-aos-delay="100">Produk Unggulan</h2>
 
             <!-- Bagian Atas (Optional Intro Text) -->
-            <p class="text-brown/70 text-lg max-w-3xl mx-auto mb-12">
+            <p class="text-brown/70 text-lg max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="200">
                 Nikmati pilihan produk terbaik kami yang diproses dari daun alami berkualitas tinggi.
                 Setiap produk dirancang dengan perhatian terhadap kesegaran, kemurnian, dan keberlanjutan.
                 Temukan sentuhan alami yang menyegarkan untuk gaya hidup sehat dan ramah lingkungan.
@@ -240,11 +241,10 @@
                     <!-- Kolom 1 -->
                     <div class="flex items-center gap-6">
                         <div
-                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
-                            <img src="assets/philo-gemini-nobg.png" alt="Leaf Sample"
-                                class="w-48 h-48 object-cover" />
+                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
+                            <img src="assets/philo-gemini-nobg.png" alt="Leaf Sample" class="w-48 h-48 object-cover" />
                         </div>
-                        <div>
+                        <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
                             <p class="text-3xl font-bold text-brown mb-2">140k</p>
                             <p class="text-sm text-brown/70 leading-relaxed">
                                 Infused Leaf Base<br>
@@ -257,10 +257,10 @@
                     <!-- Kolom 2 -->
                     <div class="flex items-center gap-6">
                         <div
-                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
+                            class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden" data-aos="slide-left" data-aos-delay="100" data-aos-duration="1000">
                             <img src="assets/Daco_4359678.png" alt="Herbal Sample" class="w-48 h-48 object-cover" />
                         </div>
-                        <div>
+                        <div data-aos="slide-right" data-aos-delay="100" data-aos-duration="1000">
                             <p class="text-3xl font-bold text-brown mb-2">90k</p>
                             <p class="text-sm text-brown/70 leading-relaxed">
                                 100% Fresh Leaves<br>
@@ -636,6 +636,13 @@
     </div> -->
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // durasi animasi (ms)
+            once: true,     // animasi hanya sekali
+        });
+    </script>
     <script>
         // Mobile menu toggle
         function toggleMenu() {
