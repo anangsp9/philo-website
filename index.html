@@ -112,11 +112,6 @@
                         class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#about" class="text-cream hover:text-white relative group">
-                    🌿<span class="ml-1">Tentang</span>
-                    <span
-                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#featured" class="text-cream hover:text-white relative group">
                     🌿<span class="ml-1">Unggulan</span>
                     <span
                         class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
@@ -136,6 +131,11 @@
                     <span
                         class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
                 </a>
+                <a href="#footer" class="text-cream hover:text-white relative group">
+                    🌿<span class="ml-1">Tentang</span>
+                    <span
+                        class="absolute left-0 bottom-0 w-0 h-0.5 bg-sage transition-all duration-300 group-hover:w-full"></span>
+                </a>
             </div>
 
             <!-- Tombol Menu Mobile kanan -->
@@ -149,11 +149,11 @@
             class="hidden lg:hidden bg-black/60 backdrop-blur-sm border-t border-white/10 transition-all duration-500 ease-in-out transform translate-y-[-10px] opacity-0">
             <div class="w-full px-4 py-6 flex flex-col items-center gap-3 text-white">
                 <a href="#home" class="bubble-link delay-75">🌿 Beranda</a>
-                <a href="#about" class="bubble-link delay-100">🌿 Tentang</a>
-                <a href="#featured" class="bubble-link delay-150">🌿 Unggulan</a>
+                <a href="#about" class="bubble-link delay-150">🌿 Unggulan</a>
                 <a href="#services" class="bubble-link delay-200">🌿 Layanan</a>
                 <a href="#products" class="bubble-link delay-300">🌿 Produk</a>
                 <a href="#contact" class="bubble-link delay-400">🌿 Kontak</a>
+                <a href="#footer" class="bubble-link delay-100">🌿 Tentang</a>
             </div>
         </div>
 
@@ -180,15 +180,16 @@
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <!-- CTA 1 (Primary) -->
-                <button
-                    class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors">
+                <a href="#products"
+                    class="bg-cream text-green-800 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition-colors text-center">
                     Jelajahi Koleksi
-                </button>
+                </a>
+
                 <!-- CTA 2 (Secondary) -->
-                <button
-                    class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-cream hover:text-green-800 transition-colors">
-                    Pelajari Lebih Lanjut
-                </button>
+                <a href="#contact"
+                    class="bg-transparent border-2 border-cream text-cream px-8 py-3 rounded-full font-semibold hover:bg-green-100 hover:text-green-800 transition-colors text-center">
+                    Informasi Lebih Lanjut
+                </a>
             </div>
         </div>
         <!-- Gradasi bawah -->
@@ -206,24 +207,15 @@
     <section id="about" class="pt-24 pb-16 bg-white relative overflow-hidden">
 
         <!-- Dekorasi Kiri -->
-<img
-  src="assets/Untitled_design_-_5-removebg-preview.png"
-  alt="Dekor Kiri"
-  class="hidden xl:block absolute left-0 top-1/2 -translate-y-1/2
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Kiri" class="hidden xl:block absolute left-0 top-1/2 -translate-y-1/2
          w-[16vw] max-w-xs h-auto opacity-100 z-0">
 
-<!-- Dekorasi Kanan -->
-<img
-  src="assets/philo-pink-mereng.png"
-  alt="Dekor Kanan"
-  class="hidden lg:block absolute right-0 top-1/4 -translate-y-1/2
+        <!-- Dekorasi Kanan -->
+        <img src="assets/philo-pink-mereng.png" alt="Dekor Kanan" class="hidden lg:block absolute right-0 top-1/4 -translate-y-1/2
          w-[19vw] max-w-md h-auto opacity-100 z-0 -scale-x-100">
 
-<!-- Dekorasi Mobile (Kanan) -->
-<img
-  src="assets/philo-pink-nggantung.png"
-  alt="Dekor Kanan Mobile"
-  class="block lg:hidden absolute right-0 top-0
+        <!-- Dekorasi Mobile (Kanan) -->
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Kanan Mobile" class="block lg:hidden absolute right-0 top-0
          w-[35vw] max-w-[170px] h-auto opacity-99 z-0 -scale-x-100">
 
 
@@ -249,8 +241,8 @@
                     <div class="flex items-center gap-6">
                         <div
                             class="relative w-64 h-64 rounded-full border border-brown/30 flex items-center justify-center overflow-hidden">
-                            <img src="assets/Daco_4359678.png" alt="Leaf Sample"
-                                class="w-48 h-48 object-cover opacity-80" />
+                            <img src="assets/philo-gemini-nobg.png" alt="Leaf Sample"
+                                class="w-48 h-48 object-cover" />
                         </div>
                         <div>
                             <p class="text-3xl font-bold text-brown mb-2">140k</p>
@@ -284,38 +276,26 @@
         </div>
     </section>
 
-<!-- Dekorasi Mobile Tengah (Kiri) -->
-<div class="relative h-0 block xl:hidden">
-  <img
-    src="assets/Untitled_design_-_5-removebg-preview.png"
-    alt="Dekor Tengah Mobile"
-    class="absolute left-0 top-0 -translate-y-1/2
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block xl:hidden">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Mobile" class="absolute left-0 top-0 -translate-y-1/2
            w-[32vw] max-w-[165px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Desktop Tengah (Kanan) -->
-<div class="relative h-0 hidden md:block">
-  <img
-    src="assets/philo-ijo-rek.png"
-    alt="Dekor Tengah Kanan"
-    class="absolute right-0 top-0 -translate-y-1/4
+    <!-- Dekorasi Desktop Tengah (Kanan) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/philo-ijo-rek.png" alt="Dekor Tengah Kanan" class="absolute right-0 top-0 -translate-y-1/4
            w-[20vw] max-w-[288px] h-auto
-           opacity-99 z-0 -scale-x-100 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 -scale-x-100 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Mobile Tengah (Kanan) -->
-<div class="relative h-0 block md:hidden">
-  <img
-    src="assets/philo-pink-mereng.png"
-    alt="Dekor Tengah Kanan Mobile"
-    class="absolute right-0 top-0 translate-y-[10%]
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-mereng.png" alt="Dekor Tengah Kanan Mobile" class="absolute right-0 top-0 translate-y-[10%]
            w-[39vw] max-w-[180px] h-auto
-           opacity-99 z-0 -scale-x-100 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 -scale-x-100 pointer-events-none" />
+    </div>
 
 
     <!-- Section 2: Services -->
@@ -378,52 +358,36 @@
         </div>
     </section>
 
-<!-- Dekorasi Desktop Tengah (Kiri) -->
-<div class="relative h-0 hidden md:block">
-  <img
-    src="assets/philo-pink-nggantung.png"
-    alt="Dekor Tengah Kiri"
-    class="absolute left-0 top-0 -translate-y-[62%]
+    <!-- Dekorasi Desktop Tengah (Kiri) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Kiri" class="absolute left-0 top-0 -translate-y-[62%]
            w-[20vw] max-w-[360px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Mobile Tengah (Kiri) -->
-<div class="relative h-0 block md:hidden">
-  <img
-    src="assets/philo-ijo-rek.png"
-    alt="Dekor Tengah Mobile"
-    class="absolute left-0 top-0 -translate-y-[60%]
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-ijo-rek.png" alt="Dekor Tengah Mobile" class="absolute left-0 top-0 -translate-y-[60%]
            w-[45vw] max-w-[190px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Mobile Tengah (Kanan) -->
-<div class="relative h-0 block lg:hidden">
-  <img
-    src="assets/Untitled_design_-_5-removebg-preview.png"
-    alt="Dekor Tengah Kanan Mobile"
-    class="absolute right-0 top-0 translate-y-[10%]
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block lg:hidden">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Kanan Mobile" class="absolute right-0 top-0 translate-y-[10%]
            w-[31vw] max-w-[150px] h-auto
-           opacity-99 z-0 -scale-x-100 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 -scale-x-100 pointer-events-none" />
+    </div>
 
     <!-- Section 3: Products -->
     <section id="products" class="py-20 bg-gradient-to-br from-beige/30 to-cream/50">
 
         <!-- Dekorasi Desktop Tengah (Kanan) -->
-<div class="relative h-0 hidden lg:block">
-  <img
-    src="assets/philo-7-ijok.png"
-    alt="Dekor Tengah Kanan"
-    class="absolute right-0 top-0 translate-y-[10%]
+        <div class="relative h-0 hidden lg:block">
+            <img src="assets/philo-7-ijok.png" alt="Dekor Tengah Kanan" class="absolute right-0 top-0 translate-y-[10%]
            w-[13vw] max-w-[240px] h-auto
-           opacity-99 z-0 -scale-x-100 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 -scale-x-100 pointer-events-none" />
+        </div>
 
 
         <div class="container mx-auto px-6 md:px-12 lg:px-16 xl:px-36">
@@ -435,9 +399,10 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Card 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="h-48 bg-sage/20 flex items-center justify-center">
-                        <i class="fas fa-leaf text-4xl text-sage"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="assets/Gemini-philo-hijau.png" alt="Pilo Snake Plant" class="w-full h-full" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Snake Plant</h3>
@@ -455,9 +420,11 @@
                     </div>
                 </div>
 
+                <!-- Card 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="h-48 bg-olive/20 flex items-center justify-center">
-                        <i class="fas fa-spa text-4xl text-olive"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="assets/Gemini_Generated_Image_philo1.png" alt="Pilo Peace Lily"
+                            class="w-full h-full" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Peace Lily</h3>
@@ -475,9 +442,11 @@
                     </div>
                 </div>
 
+                <!-- Card 3 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="h-48 bg-sand/20 flex items-center justify-center">
-                        <i class="fas fa-seedling text-4xl text-sand"></i>
+                    <div class="h-48 overflow-hidden">
+                        <img src="assets/Gemini_Generated_Image_philo2.png" alt="Pilo Rubber Plant"
+                            class="w-full h-full" />
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-brown mb-2">Pilo Rubber Plant</h3>
@@ -494,6 +463,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
             <div class="text-center">
@@ -507,43 +478,32 @@
         </div>
     </section>
 
-<!-- Dekorasi Desktop Tengah (Kiri) -->
-<div class="relative h-0 hidden md:block">
-  <img
-    src="assets/Untitled_design_-_5-removebg-preview.png"
-    alt="Dekor Tengah Kiri"
-    class="absolute left-0 top-0 -translate-y-[62%]
+    <!-- Dekorasi Desktop Tengah (Kiri) -->
+    <div class="relative h-0 hidden md:block">
+        <img src="assets/Untitled_design_-_5-removebg-preview.png" alt="Dekor Tengah Kiri" class="absolute left-0 top-0 -translate-y-[62%]
            w-[20vw] max-w-[320px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Mobile Tengah (Kiri) -->
-<div class="relative h-0 block md:hidden">
-  <img
-    src="assets/philo-7-ijok.png"
-    alt="Dekor Tengah Mobile"
-    class="absolute left-0 top-0 -translate-y-[60%]
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-7-ijok.png" alt="Dekor Tengah Mobile" class="absolute left-0 top-0 -translate-y-[60%]
            w-[35vw] max-w-[110px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
-<!-- Dekorasi Mobile Tengah (Kanan) -->
-<div class="relative h-0 block md:hidden">
-  <img
-    src="assets/philo-pink-nggantung.png"
-    alt="Dekor Tengah Kanan Mobile"
-    class="absolute right-0 top-0 translate-y-[10%]
+    <!-- Dekorasi Mobile Tengah (Kanan) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Kanan Mobile" class="absolute right-0 top-0 translate-y-[10%]
            w-[39vw] max-w-[160px] h-auto
-           opacity-99 z-0 -scale-x-100 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 -scale-x-100 pointer-events-none" />
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-brown text-white">
         <div class="container mx-auto px-6 lg:px-16 xl:px-36">
             <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
                 <div>
                     <h2 class="text-4xl font-bold mb-6">Hubungi Kami</h2>
                     <p class="text-white/80 mb-8 leading-relaxed">
@@ -551,24 +511,30 @@
                         Hubungi tim ahli kami untuk konsultasi gratis.
                     </p>
                     <div class="space-y-4">
+                        <!-- Phone -->
                         <div class="flex items-center space-x-4">
                             <i class="fas fa-phone text-sage"></i>
-                            <span>+62 812-9999-9999</span>
+                            <span>+62 822-4141-6360</span>
                         </div>
+                        <!-- Email -->
                         <div class="flex items-center space-x-4">
                             <i class="fas fa-envelope text-sage"></i>
                             <span>info@piloplants.com</span>
                         </div>
-                        <div class="flex items-center space-x-4">
+                        <!-- Address -->
+                        <a href="https://maps.app.goo.gl/zxn5BreTpqJUmKN39" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center space-x-4 hover:underline">
                             <i class="fas fa-map-marker-alt text-sage"></i>
-                            <span>Jl. Kebonarum, Klaten</span>
-                        </div>
+                            <span>Jl. Dr. Soeradji Tirtonegoro No.41, Dusun 2, Tegalyoso, Kec. Klaten Sel., Kabupaten
+                                Klaten, Jawa Tengah 57424</span>
+                        </a>
                     </div>
                 </div>
+                <!-- Contact Form -->
                 <div class="bg-white/10 p-8 rounded-2xl">
                     <form class="space-y-4">
                         <input type="text" placeholder="Nama Lengkap"
-                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70">
+                            class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70" />
                         <textarea placeholder="Pesan Anda" rows="4"
                             class="w-full p-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70"></textarea>
                         <button type="submit"
@@ -581,34 +547,30 @@
         </div>
     </section>
 
-<!-- Dekorasi Mobile Tengah (Kiri) -->
-<div class="relative h-0 block md:hidden">
-  <img
-    src="assets/philo-pink-nggantung.png"
-    alt="Dekor Tengah Mobile"
-    class="absolute left-0 top-0 -translate-y-[55%]
+    <!-- Dekorasi Mobile Tengah (Kiri) -->
+    <div class="relative h-0 block md:hidden">
+        <img src="assets/philo-pink-nggantung.png" alt="Dekor Tengah Mobile" class="absolute left-0 top-0 -translate-y-[55%]
            w-[37vw] max-w-[174px] h-auto
-           opacity-99 z-0 pointer-events-none"
-  />
-</div>
+           opacity-99 z-0 pointer-events-none" />
+    </div>
 
     <!-- Footer -->
-    <footer class="bg-brown/90 text-white py-12">
+    <footer id="footer" class="bg-brown/90 text-white py-12">
         <div class="container mx-auto px-6 md:px-12 lg:px-16 xl:px-36">
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">Pilo Plants</h3>
+                    <h3 class="text-2xl font-bold mb-4">Leafory</h3>
                     <p class="text-white/70 text-sm leading-relaxed">
-                        Menyediakan tanaman berkualitas tinggi untuk mempercantik rumah Anda sejak 2025.
+                        Menyediakan tanaman philodendron berkualitas tinggi untuk mempercantik rumah Anda sejak 2025.
                     </p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Produk</h4>
                     <ul class="space-y-2 text-sm text-white/70">
-                        <li><a href="#" class="hover:text-sage transition-colors">Tanaman Indoor</a></li>
-                        <li><a href="#" class="hover:text-sage transition-colors">Tanaman Outdoor</a></li>
-                        <li><a href="#" class="hover:text-sage transition-colors">Pot & Aksesori</a></li>
+                        <li><a href="#" class="hover:text-sage transition-colors">Tanaman</a></li>
+                        <li><a href="#" class="hover:text-sage transition-colors">Pot & Aksesoris</a></li>
                         <li><a href="#" class="hover:text-sage transition-colors">Pupuk & Perawatan</a></li>
+                        <li><a href="#" class="hover:text-sage transition-colors">Merchandise</a></li>
                     </ul>
                 </div>
                 <div>
@@ -622,20 +584,44 @@
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Ikuti Kami</h4>
-                    <div class="flex space-x-4">
+                    <div class="flex flex-wrap gap-4 max-w-[200px]">
+                        <!-- Instagram -->
                         <a href="#"
                             class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-instagram"></i>
                         </a>
+
+                        <!-- Facebook -->
                         <a href="#"
                             class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-facebook"></i>
                         </a>
+
+                        <!-- WhatsApp -->
                         <a href="#"
                             class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
                             <i class="fab fa-whatsapp"></i>
                         </a>
+
+                        <!-- TikTok -->
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+
+                        <!-- Shopee -->
+                        <a href="#"
+                            class="w-10 h-10 bg-sage rounded-full flex items-center justify-center hover:bg-sage/80 transition-colors">
+                            <i class="fas fa-store"></i>
+                        </a>
                     </div>
+
                 </div>
             </div>
             <div class="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/70">
