@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leafory - Semua Produk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        .show-menu {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            display: block !important;
+        }
+
+        .bubble-link {
+            @apply bg-white/10 text-cream px-6 py-3 rounded-full shadow-md hover:bg-sage/80 hover:text-white transition-all duration-300 ease-out text-center w-full max-w-xs text-sm backdrop-blur-md;
+            transform: scale(0.95);
+            opacity: 0;
+            animation: bubbleIn 0.4s forwards;
+        }
+
+        @keyframes bubbleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8) translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .delay-75 {
+            animation-delay: 75ms;
+        }
+
+        .delay-100 {
+            animation-delay: 100ms;
+        }
+
+        .delay-150 {
+            animation-delay: 150ms;
+        }
+
+        .delay-200 {
+            animation-delay: 200ms;
+        }
+
+        .delay-300 {
+            animation-delay: 300ms;
+        }
+
+        .delay-400 {
+            animation-delay: 400ms;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sage': '#809671',
+                        'cream': '#E5E0D8',
+                        'olive': '#B3B792',
+                        'sand': '#D2AB80',
+                        'brown': '#725C3A',
+                        'beige': '#E5D2B8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-cream text-brown">
+    <header class="py-6 text-center bg-sage text-white">
+        <h1 class="text-3xl font-bold">Semua Produk</h1>
+        <p class="text-brown/80 text-lg mt-2">Koleksi lengkap tanaman Pilo</p>
+    </header>
+
+    <main class="container mx-auto px-6 md:px-12 lg:px-16 xl:px-36 py-12">
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sage/20 flex items-center justify-center">
+                        <i class="fas fa-leaf text-4xl text-sage"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Snake Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman pembersih udara yang sangat mudah perawatan. Cocok untuk pemula dan ruang dengan
+                            cahaya minim.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sage">Rp 85.000</span>
+                            <button
+                                class="bg-sage text-white px-4 py-2 rounded-full text-sm hover:bg-sage/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-olive/20 flex items-center justify-center">
+                        <i class="fas fa-spa text-4xl text-olive"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Peace Lily</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman berbunga putih yang elegan. Memberikan kesan tenang dan damai untuk ruang kerja atau
+                            kamar tidur.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-olive">Rp 120.000</span>
+                            <button
+                                class="bg-olive text-white px-4 py-2 rounded-full text-sm hover:bg-olive/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sand/20 flex items-center justify-center">
+                        <i class="fas fa-seedling text-4xl text-sand"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Rubber Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman dengan daun mengkilap yang memberikan kesan modern. Tumbuh cepat dan mudah
+                            beradaptasi.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sand">Rp 95.000</span>
+                            <button
+                                class="bg-sand text-white px-4 py-2 rounded-full text-sm hover:bg-sand/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sage/20 flex items-center justify-center">
+                        <i class="fas fa-leaf text-4xl text-sage"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Snake Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman pembersih udara yang sangat mudah perawatan. Cocok untuk pemula dan ruang dengan
+                            cahaya minim.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sage">Rp 85.000</span>
+                            <button
+                                class="bg-sage text-white px-4 py-2 rounded-full text-sm hover:bg-sage/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-olive/20 flex items-center justify-center">
+                        <i class="fas fa-spa text-4xl text-olive"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Peace Lily</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman berbunga putih yang elegan. Memberikan kesan tenang dan damai untuk ruang kerja atau
+                            kamar tidur.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-olive">Rp 120.000</span>
+                            <button
+                                class="bg-olive text-white px-4 py-2 rounded-full text-sm hover:bg-olive/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sand/20 flex items-center justify-center">
+                        <i class="fas fa-seedling text-4xl text-sand"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Rubber Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman dengan daun mengkilap yang memberikan kesan modern. Tumbuh cepat dan mudah
+                            beradaptasi.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sand">Rp 95.000</span>
+                            <button
+                                class="bg-sand text-white px-4 py-2 rounded-full text-sm hover:bg-sand/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sage/20 flex items-center justify-center">
+                        <i class="fas fa-leaf text-4xl text-sage"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Snake Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman pembersih udara yang sangat mudah perawatan. Cocok untuk pemula dan ruang dengan
+                            cahaya minim.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sage">Rp 85.000</span>
+                            <button
+                                class="bg-sage text-white px-4 py-2 rounded-full text-sm hover:bg-sage/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-olive/20 flex items-center justify-center">
+                        <i class="fas fa-spa text-4xl text-olive"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Peace Lily</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman berbunga putih yang elegan. Memberikan kesan tenang dan damai untuk ruang kerja atau
+                            kamar tidur.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-olive">Rp 120.000</span>
+                            <button
+                                class="bg-olive text-white px-4 py-2 rounded-full text-sm hover:bg-olive/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="h-48 bg-sand/20 flex items-center justify-center">
+                        <i class="fas fa-seedling text-4xl text-sand"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-brown mb-2">Pilo Rubber Plant</h3>
+                        <p class="text-brown/70 text-sm mb-4">
+                            Tanaman dengan daun mengkilap yang memberikan kesan modern. Tumbuh cepat dan mudah
+                            beradaptasi.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-sand">Rp 95.000</span>
+                            <button
+                                class="bg-sand text-white px-4 py-2 rounded-full text-sm hover:bg-sand/90 transition-colors">
+                                Beli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </main>
+</body>
+
+</html>
