@@ -137,7 +137,6 @@
             </div>
         </div>
 
-
     </section>
 
 
@@ -375,21 +374,21 @@
     // Data
     // =====================
     const products = [
-        { name: "Philo Moonlight", image: "assets/philo-moonlight.jpeg", desc: "Tanaman hias berdaun hijau terang menyala, tampil elegan, mudah dirawat, dan cocok untuk dekorasi ruangan modern.", price: "Rp 85.000" },
-        { name: "Philo Birkin", image: "assets/Gemini_Generated_Image_philo3.png", desc: "Daun hijau bergaris putih elegan, tampil menawan, cocok sebagai tanaman hias indoor yang unik dan mudah dirawat.", price: "Rp 120.000" },
-        { name: "Philo Pink Congo", image: "assets/philo-congo.jpeg", desc: "Tanaman dengan daun berwarna pink cerah yang eksotis, tampil mencolok, cocok mempercantik ruangan dengan nuansa tropis elegan.", price: "Rp 95.000" },
-        { name: "Philo Black Cardinal", image: "assets/philo-black-cardinal.jpeg", desc: "Daun gelap mengilap bernuansa merah kehitaman, tampil eksotik dan bold, cocok untuk dekorasi rumah yang elegan.", price: "Rp 85.000" },
-        { name: "Philo Prince/Orange", image: "assets/philo-prince.jpeg", desc: "Tanaman berdaun oranye cerah dengan gradasi hijau, tampilkan kesan hangat, segar, dan eksotis untuk dekorasi ruangan modern.", price: "Rp 120.000" },
-        { name: "Philo Katak/Martianun", image: "assets/philo-katak.jpeg", desc: "Tanaman dengan daun besar mengilap berbentuk unik menyerupai katak, tampil eksotis, tebal, dan cocok sebagai dekorasi tropis elegan.", price: "Rp 95.000" },
-        { name: "Philo Gloriosum", image: "assets/Philodendron-Gloriosum-Varigata.jpeg", desc: "Tanaman berdaun beludru hijau lebar dengan tulang daun putih mencolok, tampil mewah, elegan, dan sangat memikat perhatian.", price: "Rp 85.000" },
-        { name: "Philo Micans", image: "assets/philo-micans.jpeg", desc: "Tanaman berdaun kecil beludru berwarna hijau gelap keunguan, tampak anggun, menjuntai indah, cocok untuk hiasan gantung elegan.", price: "Rp 120.000" },
-        { name: "Philo Micans Air", image: "assets/philo-micans-air.jpeg", desc: "Tanaman berdaun kecil beludru berwarna hijau gelap keunguan, tampak anggun, menjuntai indah, cocok untuk hiasan gantung elegan.", price: "Rp 120.000" },
-        { name: "Philo Melanochrysum", image: "assets/philo-melanochrysum.jpeg", desc: "Tanaman dengan daun panjang beludru hijau tua dengan urat keemasan, tampil mewah, eksotis, dan cocok untuk koleksi premium.", price: "Rp 95.000" },
         { name: "Philo Pink Princess", image: "assets/philo-pink-princess2.jpeg", desc: "Daun gelap berpadu semburat pink mencolok, tampil unik, elegan, dan jadi incaran kolektor tanaman hias eksklusif.", price: "Rp 85.000" },
         { name: "Philo White Princess", image: "assets/philo-white-princess2.jpeg", desc: "Tanaman berdaun hijau gelap dengan semburat putih elegan, tampil anggun, eksklusif, dan cocok mempercantik sudut ruangan.", price: "Rp 120.000" },
+        { name: "Philo Moonlight", image: "assets/philo-moonlight.jpeg", desc: "Tanaman hias berdaun hijau terang menyala, tampil elegan, mudah dirawat, dan cocok untuk dekorasi ruangan modern.", price: "Rp 85.000" },
+        { name: "Philo Prince/Orange", image: "assets/philo-prince.jpeg", desc: "Tanaman berdaun oranye cerah dengan gradasi hijau, tampilkan kesan hangat, segar, dan eksotis untuk dekorasi ruangan modern.", price: "Rp 120.000" },
+        { name: "Philo Pink Congo", image: "assets/philo-congo.jpeg", desc: "Tanaman dengan daun berwarna pink cerah yang eksotis, tampil mencolok, cocok mempercantik ruangan dengan nuansa tropis elegan.", price: "Rp 95.000" },
+        { name: "Philo Black Cardinal", image: "assets/philo-black-cardinal.jpeg", desc: "Daun gelap mengilap bernuansa merah kehitaman, tampil eksotik dan bold, cocok untuk dekorasi rumah yang elegan.", price: "Rp 85.000" },
+        { name: "Philo Micans", image: "assets/philo-micans.jpeg", desc: "Tanaman berdaun kecil beludru berwarna hijau gelap keunguan, tampak anggun, menjuntai indah, cocok untuk hiasan gantung elegan.", price: "Rp 120.000" },
+        { name: "Philo Micans Air", image: "assets/philo-micans-air.jpeg", desc: "Tanaman berdaun kecil beludru berwarna hijau gelap keunguan, tampak anggun, menjuntai indah, cocok untuk hiasan gantung elegan.", price: "Rp 120.000" },
+        { name: "Philo Katak/Martianun", image: "assets/philo-katak.jpeg", desc: "Tanaman dengan daun besar mengilap berbentuk unik menyerupai katak, tampil eksotis, tebal, dan cocok sebagai dekorasi tropis elegan.", price: "Rp 95.000" },
+        { name: "Philo Gloriosum", image: "assets/Philodendron-Gloriosum-Varigata.jpeg", desc: "Tanaman berdaun beludru hijau lebar dengan tulang daun putih mencolok, tampil mewah, elegan, dan sangat memikat perhatian.", price: "Rp 85.000" },
+        { name: "Philo Melanochrysum", image: "assets/philo-melanochrysum.jpeg", desc: "Tanaman dengan daun panjang beludru hijau tua dengan urat keemasan, tampil mewah, eksotis, dan cocok untuk koleksi premium.", price: "Rp 95.000" },
+        { name: "Philo Birkin", image: "assets/Gemini_Generated_Image_philo3.png", desc: "Daun hijau bergaris putih elegan, tampil menawan, cocok sebagai tanaman hias indoor yang unik dan mudah dirawat.", price: "Rp 120.000" },
     ];
 
-    const colors = ["olive", "sand", "sage"]; // pastikan disafelist di tailwind.config.js jika perlu
+    const colors = ["sage", "olive", "sand"]; // pastikan disafelist di tailwind.config.js jika perlu
 
     // =====================
     // Observer (animasi scroll-in)
@@ -472,7 +471,7 @@
     },
   ];
 
-  const toolsColors = ["olive", "sand", "sage"];
+  const toolsColors = ["sage", "olive", "sand"];
 
   const toolsContainer = document.getElementById("card-container-tools");
 
@@ -483,7 +482,7 @@
       <div class="anim-card w-full bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col
                   opacity-0 translate-y-16 transition-all duration-[1000ms] ease-out will-change-transform">
         <div class="h-[300px] flex-shrink-0 overflow-hidden bg-gray-50 flex justify-center items-center">
-          <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover" />
+          <img src="${p.image}" alt="${p.name}" class="w-full h-full object-fill" />
         </div>
         <div class="p-4 flex flex-col flex-1">
           <h3 class="text-lg font-semibold text-brown mb-1 break-words">${p.name}</h3>
@@ -542,7 +541,7 @@
       <div class="anim-card w-full bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col
                   opacity-0 translate-y-16 transition-all duration-[1000ms] ease-out will-change-transform">
         <div class="h-[300px] flex-shrink-0 overflow-hidden bg-gray-50 flex justify-center items-center">
-          <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover" />
+          <img src="${product.image}" alt="${product.name}" class="w-full h-full object-fill" />
         </div>
         <div class="p-4 flex flex-col flex-1">
           <h3 class="text-lg font-semibold text-brown mb-1 break-words">${product.name}</h3>
