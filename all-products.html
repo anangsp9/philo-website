@@ -91,12 +91,17 @@
 </head>
 
 <body class="bg-cream text-brown">
-    <header class="py-3 px-6 bg-brown text-white shadow-md">
-        <div class="text-center">
-            <h1 class="text-2xl font-semibold tracking-wide">Semua Produk</h1>
-            <p class="text-sm text-white/80 mt-1">Koleksi lengkap produk leafory</p>
-        </div>
-    </header>
+    <header class="relative py-3 px-6 pb-8 bg-brown text-white">
+  <div class="text-center relative z-1">
+    <h1 class="text-2xl font-semibold tracking-wide">Semua Produk</h1>
+    <p class="text-sm text-white/80 mt-1">Koleksi lengkap produk leafory</p>
+  </div>
+
+  <!-- gradasi bawah -->
+  <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-4 bg-gradient-to-b from-brown to-cream z-0"></div>
+</header>
+
+
 
     <!-- Dekorasi Desktop Tengah (Kanan) -->
     <div class="relative h-0 hidden lg:block">
@@ -450,25 +455,25 @@
       name: "Pot",
       image: "assets/pot-tanaman.jpeg",
       desc: "Pot minimalis berbahan kokoh, desain elegan, cocok untuk segala jenis tanaman hias indoor maupun outdoor favoritmu.",
-      price: "Rp 85.000",
+      price: "10k - 25k",
     },
     {
       name: "Teko Siram Sprayer",
       image: "assets/teko-siram-sprayer.jpeg",
       desc: "Teko siram ergonomis dengan semprotan halus, memudahkan penyiraman merata tanpa merusak daun atau media tanam.",
-      price: "Rp 120.000",
+      price: "75k",
     },
     {
       name: "Paket Alat Tanaman",
       image: "assets/alat-berkebun.jpeg",
       desc: "Paket lengkap alat berkebun: cangkul mini, sekop, garpu, dan sarung tangan yang praktis, ringan, mudah digunakan.",
-      price: "Rp 95.000",
+      price: "75k",
     },
     {
       name: "Pupuk",
       image: "assets/pupuk.jpeg",
       desc: "Pupuk organik berkualitas, mempercepat pertumbuhan, menyuburkan akar, dan menjaga warna daun tetap sehat dan segar.",
-      price: "Rp 85.000",
+      price: "15k - 25k",
     },
   ];
 
@@ -509,7 +514,7 @@
       name: "Baju Eco Print",
       image: "assets/baju-ecoprint.png",
       desc: "Baju ecoprint dengan motif daun philodendron alami, hadirkan kesan tropis elegan yang segar, unik, dan berkarakter kuat.",
-      price: "Rp 85.000",
+      price: "120k",
     },
     // {
     //   name: "Celana Eco Print",
@@ -521,13 +526,13 @@
       name: "Jaket Eco Print",
       image: "assets/jacket-ecoprint.png",
       desc: "Jaket ecoprint motif daun philodendron, tampilkan kesan tropis elegan dengan sentuhan alami yang unik dan menawan.",
-      price: "Rp 95.000",
+      price: "100k",
     },
     {
       name: "Topi Eco Print",
       image: "assets/topi-ecoprint.png",
       desc: "Topi ecoprint bernuansa daun philodendron, hadirkan sentuhan alam tropis yang artistik, stylish, dan ramah lingkungan.",
-      price: "Rp 85.000",
+      price: "250k",
     },
   ];
 
